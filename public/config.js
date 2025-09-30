@@ -18,7 +18,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_HAS_PRIMARY_LOGO": "true",
   "VITE_HAS_SECONDARY_LOGO": "true",
   "VITE_ENABLED_MENUS": "Trading,Markets,Portfolio,Rewards,Vaults",
-  "VITE_CUSTOM_MENUS": "Purchase $VAL, https://raydium.io/swap/?inputMint=sol&outputMint=DtwN3PHiKEpK1MSekViVC8QifdRJCkML6HG16sXHpump; Access The Game, https://app.valmeme.com/",
+  "VITE_CUSTOM_MENUS": "Purchase $VAL, https://raydium.io/swap/?inputMint=sol&outputMint=DtwN3PHiKEpK1MSekViVC8QifdRJCkML6HG16sXHpump; Play Diamond Hands, https://app.valmeme.com/",
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "https://t.me/StoreofVal",
   "VITE_DISCORD_URL": "",

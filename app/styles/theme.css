@@ -1,6 +1,6 @@
 :root {
-  --oui-font-family: 'Open Sans', sans-serif;
-  --oui-font-size-base: 12px;
+  --oui-font-family: 'Roboto', sans-serif;
+  --oui-font-size-base: 16px;
 
   /* colors */
   --oui-color-primary: 150 100 220;
@@ -95,6 +95,6 @@
 }
 
 html, body {
-  font-family: 'Open Sans', sans-serif !important;
-  font-size: 12px !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px !important;
 }

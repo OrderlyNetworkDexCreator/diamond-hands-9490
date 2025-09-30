@@ -29,7 +29,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "@storeofval",
-  "VITE_SEO_THEME_COLOR": "#0c0e1e",
+  "VITE_SEO_THEME_COLOR": "#090d2f",
   "VITE_SEO_KEYWORDS": "dex, perps, crypto trading , meme trading, blockchain , exchanges, trading exchanges, crypto trading platforms",
   "VITE_AVAILABLE_LANGUAGES": "en,zh,ja,es,ko,vi,de,fr,ru,id,tr,it,pt,uk,pl,nl",
   "VITE_USE_CUSTOM_PNL_POSTERS": "false",

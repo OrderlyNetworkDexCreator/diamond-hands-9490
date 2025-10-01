@@ -94,6 +94,26 @@
   --oui-spacing-xl: 33.75rem;
 }
 
+/* ---- component overrides live OUTSIDE :root ---- */
+
+[data-testid="oui-testid-orderEntry-side-buy-button"] {
+  background-color: rgb(var(--oui-color-primary)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important; /* text */
+}
+[data-testid="oui-testid-orderEntry-side-buy-button"]:hover,
+[data-testid="oui-testid-orderEntry-side-buy-button"]:active {
+  background-color: rgb(var(--oui-color-primary-darken)) !important;
+}
+
+[data-testid="oui-testid-orderEntry-side-sell-button"] {
+  background-color: rgb(var(--oui-color-danger)) !important;
+  color: rgb(var(--oui-color-danger-contrast)) !important;
+}
+[data-testid="oui-testid-orderEntry-side-sell-button"]:hover,
+[data-testid="oui-testid-orderEntry-side-sell-button"]:active {
+  background-color: rgb(var(--oui-color-danger-darken)) !important;
+}
+
 html, body {
   font-family: 'Roboto', sans-serif !important;
   font-size: 16px !important;

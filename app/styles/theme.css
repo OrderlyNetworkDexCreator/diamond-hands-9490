@@ -126,3 +126,13 @@ span.oui-bg-clip-text {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+button[aria-haspopup="dialog"][type="button"] {
+  background-color: rgb(var(--oui-color-danger)) !important;          /* red */
+  color: rgb(var(--oui-color-danger-contrast)) !important;           /* text (black/white depending on your token) */
+  border-color: rgb(var(--oui-color-danger-darken)) !important;      /* border slightly darker red */
+}
+
+button[aria-haspopup="dialog"][type="button"]:hover,
+button[aria-haspopup="dialog"][type="button"]:active {
+  background-color: rgb(var(--oui-color-danger-darken)) !important;  /* darker red on hover/active */
+}

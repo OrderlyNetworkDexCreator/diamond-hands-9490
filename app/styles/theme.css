@@ -118,3 +118,8 @@ html, body {
   font-family: 'Roboto', sans-serif !important;
   font-size: 16px !important;
 }
+:root {
+  --oui-color-base-foreground: 255 255 255; /* stays white */
+}
+/* then adjust how "contrast-XX" maps, e.g. */
+.oui-text-base-contrast-36 { color: rgba(255,255,255,0.6); }

@@ -12,7 +12,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_ENABLE_ABSTRACT_WALLET": "false",
   "VITE_DISABLE_EVM_WALLETS": "false",
   "VITE_DISABLE_SOLANA_WALLETS": "false",
-  "VITE_WALLETCONNECT_PROJECT_ID": "",
+  "VITE_WALLETCONNECT_PROJECT_ID": "864c1add5dd75ea4b1af6a695979ea13",
   "VITE_APP_NAME": "Diamond Hands",
   "VITE_APP_DESCRIPTION": "Decentralized Perpetual Trading Platform in the Diamond Hands Ecosystem",
   "VITE_HAS_PRIMARY_LOGO": "true",

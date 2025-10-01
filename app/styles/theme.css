@@ -33,21 +33,14 @@
   --oui-color-warning-darken: 230 180 50;
   --oui-color-warning-contrast: 0 0 0;
 
-  /* Surfaces (dark theme) */
-  --oui-color-fill: 0 0 0;
-  --oui-color-fill-active: 20 22 34;      /* Subtle active fill for dark UI */
-
-  --oui-color-base-1: 12 14 30;           /* Page background */
-  --oui-color-base-2: 12 14 30;
-  --oui-color-base-3: 14 16 34;
-  --oui-color-base-4: 16 18 36;
-  --oui-color-base-5: 20 22 40;
-  --oui-color-base-6: 10 5 0;             /* Very dark brown/black (existing) */
-  --oui-color-base-7: 24 26 44;           /* Cards/inputs default */
-  --oui-color-base-8: 12 14 30;
-  --oui-color-base-9: 12 14 30;
-  --oui-color-base-10: 0 0 0;
-
+  /* Surfaces (softer dark theme) */
+  --oui-color-base-1: 24 26 44;   /* page bg — deep navy */
+  --oui-color-base-2: 28 30 50;
+  --oui-color-base-3: 32 34 54;
+  --oui-color-base-4: 36 38 58;
+  --oui-color-base-5: 40 42 64;   /* card bg */
+  --oui-color-base-6: 48 50 72;   /* input bg — softer than 10 5 0 */
+  --oui-color-base-7: 56 58 84;   /* hover/active states */
   --oui-color-base-foreground: 255 255 255; /* Text on dark */
   --oui-color-line: 53 196 87;              /* Green divider/border */
 

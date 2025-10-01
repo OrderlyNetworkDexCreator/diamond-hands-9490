@@ -2,62 +2,67 @@
   --oui-font-family: 'Roboto', sans-serif;
   --oui-font-size-base: 16px;
 
-  /* colors */
-  --oui-color-primary: 42 183 75;
-  --oui-color-primary-light: 250 171 0;
-  --oui-color-primary-darken: 137 208 123;
-  --oui-color-primary-contrast: 0 0 0;
+  /* BRAND COLORS (VAL: green + gold on dark) */
+  --oui-color-primary: 42 183 75;         /* VAL green (actions) */
+  --oui-color-primary-light: 250 171 0;   /* Gold accent */
+  --oui-color-primary-darken: 28 140 55;  /* Deeper VAL green for hover/active */
+  --oui-color-primary-contrast: 0 0 0;    /* Black text on bright green/gold */
 
-  --oui-color-link: 4 149 246;
-  --oui-color-link-light: 116 188 236;
+  /* Links use gold to match site CTAs/accents */
+  --oui-color-link: 250 171 0;            /* Gold links */
+  --oui-color-link-light: 255 209 70;     /* Lighter gold on hover */
 
-  --oui-color-secondary: 215 157 55;
-  --oui-color-tertiary: 128 63 107;
-  --oui-color-quaternary: 237 167 0;
+  /* Supporting palette */
+  --oui-color-secondary: 128 63 107;      /* Deep purple (space/cosmic vibe) */
+  --oui-color-tertiary: 4 149 246;        /* Utility blue if needed */
+  --oui-color-quaternary: 237 167 0;      /* Alt gold */
 
-  --oui-color-danger: 245 97 139;
+  /* Status */
+  --oui-color-danger: 245 97 139;         /* Red (sell/errors) */
   --oui-color-danger-light: 250 120 160;
   --oui-color-danger-darken: 230 80 120;
   --oui-color-danger-contrast: 0 0 0;
 
-  --oui-color-success: 41 233 169;
+  --oui-color-success: 41 233 169;        /* Bright success green */
   --oui-color-success-light: 100 250 200;
   --oui-color-success-darken: 30 200 150;
   --oui-color-success-contrast: 0 0 0;
 
-  --oui-color-warning: 255 209 70;
+  --oui-color-warning: 255 209 70;        /* Warm gold warning */
   --oui-color-warning-light: 255 230 120;
   --oui-color-warning-darken: 230 180 50;
   --oui-color-warning-contrast: 0 0 0;
 
+  /* Surfaces (dark theme) */
   --oui-color-fill: 0 0 0;
-  --oui-color-fill-active: 238 239 242;
+  --oui-color-fill-active: 20 22 34;      /* Subtle active fill for dark UI */
 
-  --oui-color-base-1: 12 14 30;
+  --oui-color-base-1: 12 14 30;           /* Page background */
   --oui-color-base-2: 12 14 30;
-  --oui-color-base-3: 12 14 30;
-  --oui-color-base-4: 12 14 30;
-  --oui-color-base-5: 12 14 30;
-  --oui-color-base-6: 10 5 0;
-  --oui-color-base-7: 74 76 94;
+  --oui-color-base-3: 14 16 34;
+  --oui-color-base-4: 16 18 36;
+  --oui-color-base-5: 20 22 40;
+  --oui-color-base-6: 10 5 0;             /* Very dark brown/black (existing) */
+  --oui-color-base-7: 24 26 44;           /* Cards/inputs default */
   --oui-color-base-8: 12 14 30;
   --oui-color-base-9: 12 14 30;
   --oui-color-base-10: 0 0 0;
 
-  --oui-color-base-foreground: 255 255 255;
-  --oui-color-line: 53 196 87;
+  --oui-color-base-foreground: 255 255 255; /* Text on dark */
+  --oui-color-line: 53 196 87;              /* Green divider/border */
 
+  /* Trading */
   --oui-color-trading-loss: 245 97 139;
   --oui-color-trading-loss-contrast: 255 255 255;
   --oui-color-trading-profit: 41 233 169;
   --oui-color-trading-profit-contrast: 255 255 255;
 
-  /* gradients */
-  --oui-gradient-primary-start: 255 220 180;
-  --oui-gradient-primary-end: 255 205 150;
+  /* Gradients (brand: gold → green) */
+  --oui-gradient-primary-start: 255 205 150;
+  --oui-gradient-primary-end: 42 183 75;
 
-  --oui-gradient-secondary-start: 200 150 100;
-  --oui-gradient-secondary-end: 255 205 150;
+  --oui-gradient-secondary-start: 250 171 0;  /* gold */
+  --oui-gradient-secondary-end: 42 183 75;    /* green */
 
   --oui-gradient-success-start: 30 150 120;
   --oui-gradient-success-end: 41 233 169;
@@ -65,8 +70,8 @@
   --oui-gradient-danger-start: 200 50 100;
   --oui-gradient-danger-end: 245 97 139;
 
-  --oui-gradient-brand-start: 250 171 0;
-  --oui-gradient-brand-end: 42 183 75;
+  --oui-gradient-brand-start: 250 171 0;      /* gold */
+  --oui-gradient-brand-end: 42 183 75;        /* green */
   --oui-gradient-brand-stop-start: 6.62%;
   --oui-gradient-brand-stop-end: 86.5%;
   --oui-gradient-brand-angle: 17.44deg;
@@ -94,19 +99,18 @@
   --oui-spacing-xl: 33.75rem;
 }
 
-/* ---- component overrides live OUTSIDE :root ---- */
-
+/* COMPONENT OVERRIDES (solid brand colors on buttons) */
 [data-testid="oui-testid-orderEntry-side-buy-button"] {
-  background-color: rgb(var(--oui-color-primary)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important; /* text */
+  background-color: rgb(var(--oui-color-primary)) !important;            /* green */
+  color: rgb(var(--oui-color-primary-contrast)) !important;
 }
 [data-testid="oui-testid-orderEntry-side-buy-button"]:hover,
 [data-testid="oui-testid-orderEntry-side-buy-button"]:active {
-  background-color: rgb(var(--oui-color-primary-darken)) !important;
+  background-color: rgb(var(--oui-color-primary-darken)) !important;     /* deeper green */
 }
 
 [data-testid="oui-testid-orderEntry-side-sell-button"] {
-  background-color: rgb(var(--oui-color-danger)) !important;
+  background-color: rgb(var(--oui-color-danger)) !important;             /* red */
   color: rgb(var(--oui-color-danger-contrast)) !important;
 }
 [data-testid="oui-testid-orderEntry-side-sell-button"]:hover,
@@ -114,12 +118,8 @@
   background-color: rgb(var(--oui-color-danger-darken)) !important;
 }
 
+/* Base typography */
 html, body {
   font-family: 'Roboto', sans-serif !important;
   font-size: 16px !important;
 }
-:root {
-  --oui-color-base-foreground: 255 255 255; /* stays white */
-}
-/* then adjust how "contrast-XX" maps, e.g. */
-.oui-text-base-contrast-36 { color: rgba(255,255,255,0.6); }

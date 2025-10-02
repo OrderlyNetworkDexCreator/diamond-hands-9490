@@ -150,3 +150,48 @@ button[aria-haspopup="dialog"][type="button"]:active {
 [data-testid="oui-testid-portfolio-assets-withdraw-btn"]:active {
   background-color: rgb(var(--oui-color-danger-darken)); /* darker red on click */
 }
+/* Default state stays neutral */
+[data-testid="oui-testid-assetView-withdraw-button"] {
+  background-color: rgb(var(--oui-color-base-4)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Hover turns red */
+[data-testid="oui-testid-assetView-withdraw-button"]:hover {
+  background-color: rgb(var(--oui-color-danger)) !important;
+  color: rgb(var(--oui-color-danger-contrast)) !important;
+}
+
+/* Active (pressed) state = darker red */
+[data-testid="oui-testid-assetView-withdraw-button"]:active {
+  background-color: rgb(var(--oui-color-danger-darken)) !important;
+  color: rgb(var(--oui-color-danger-contrast)) !important;
+}
+
+/* Default state = neutral gray */
+[data-testid="oui-testid-assetView-transfer-button"] {
+  background-color: rgb(var(--oui-color-base-4)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Hover = brand green (like Buy) */
+[data-testid="oui-testid-assetView-transfer-button"]:hover {
+  background-color: rgb(var(--oui-color-primary)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
+}
+
+/* Active/Pressed = darker green */
+[data-testid="oui-testid-assetView-transfer-button"]:active {
+  background-color: rgb(var(--oui-color-primary-darken)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
+}
+[data-testid="oui-testid-assetView-transfer-button-alt"]:hover {
+  background-color: rgb(var(--oui-color-primary)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
+}
+[data-testid="oui-testid-assetView-transfer-button-alt"]:active {
+  background-color: rgb(var(--oui-color-primary-darken)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
+}

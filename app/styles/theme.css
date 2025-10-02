@@ -182,33 +182,43 @@ button[aria-haspopup="dialog"][type="button"]:active {
   color: rgb(var(--oui-color-primary-contrast)) !important;
 }
 
-/* WITHDRAW = hover red */
-[data-testid="oui-testid-assetView-withdraw-button"] {
+/* ---------------- WITHDRAW (hover red) ---------------- */
+[data-testid="oui-testid-assetView-withdraw-button"],
+button.oui-button.oui-bg-base-4 span:has(+ span:contains("Withdraw")) {
   background-color: rgb(var(--oui-color-base-4)) !important;
   color: rgb(var(--oui-color-primary-contrast)) !important;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
-[data-testid="oui-testid-assetView-withdraw-button"]:hover {
+
+[data-testid="oui-testid-assetView-withdraw-button"]:hover,
+button.oui-button.oui-bg-base-4:has(span span:contains("Withdraw")):hover {
   background-color: rgb(var(--oui-color-danger)) !important;          /* red */
   color: rgb(var(--oui-color-danger-contrast)) !important;
 }
-[data-testid="oui-testid-assetView-withdraw-button"]:active {
+
+[data-testid="oui-testid-assetView-withdraw-button"]:active,
+button.oui-button.oui-bg-base-4:has(span span:contains("Withdraw")):active {
   background-color: rgb(var(--oui-color-danger-darken)) !important;   /* darker red */
   color: rgb(var(--oui-color-danger-contrast)) !important;
 }
 
-/* TRANSFER = hover green */
-[data-testid="oui-testid-assetView-transfer-button"] {
+
+/* ---------------- TRANSFER (hover green) ---------------- */
+[data-testid="oui-testid-assetView-transfer-button"],
+button.oui-button.oui-bg-base-4 span:has(+ span:contains("Transfer")) {
   background-color: rgb(var(--oui-color-base-4)) !important;
   color: rgb(var(--oui-color-primary-contrast)) !important;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
-[data-testid="oui-testid-assetView-transfer-button"]:hover {
+
+[data-testid="oui-testid-assetView-transfer-button"]:hover,
+button.oui-button.oui-bg-base-4:has(span span:contains("Transfer")):hover {
   background-color: rgb(var(--oui-color-primary)) !important;         /* green */
   color: rgb(var(--oui-color-primary-contrast)) !important;
 }
-[data-testid="oui-testid-assetView-transfer-button"]:active {
+
+[data-testid="oui-testid-assetView-transfer-button"]:active,
+button.oui-button.oui-bg-base-4:has(span span:contains("Transfer")):active {
   background-color: rgb(var(--oui-color-primary-darken)) !important;  /* darker green */
   color: rgb(var(--oui-color-primary-contrast)) !important;
 }
-

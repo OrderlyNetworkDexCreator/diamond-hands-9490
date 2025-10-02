@@ -136,3 +136,17 @@ button[aria-haspopup="dialog"][type="button"]:hover,
 button[aria-haspopup="dialog"][type="button"]:active {
   background-color: rgb(var(--oui-color-danger-darken)) !important;  /* darker red on hover/active */
 }
+[data-testid="oui-testid-portfolio-assets-withdraw-btn"] {
+  background-color: rgb(var(--oui-color-base-4));
+  color: rgb(var(--oui-color-primary-contrast));
+  transition: background-color 0.25s ease;
+}
+
+[data-testid="oui-testid-portfolio-assets-withdraw-btn"]:hover {
+  background-color: rgb(var(--oui-color-danger)); /* red on hover */
+  color: rgb(var(--oui-color-danger-contrast));
+}
+
+[data-testid="oui-testid-portfolio-assets-withdraw-btn"]:active {
+  background-color: rgb(var(--oui-color-danger-darken)); /* darker red on click */
+}

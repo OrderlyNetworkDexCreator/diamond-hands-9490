@@ -182,16 +182,6 @@ button[aria-haspopup="dialog"][type="button"]:active {
   color: rgb(var(--oui-color-primary-contrast)) !important;
 }
 
-/* Active/Pressed = darker green */
-[data-testid="oui-testid-assetView-transfer-button"]:active {
-  background-color: rgb(var(--oui-color-primary-darken)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-}
-[data-testid="oui-testid-assetView-transfer-button-alt"]:hover {
-  background-color: rgb(var(--oui-color-primary)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-}
-[data-testid="oui-testid-assetView-transfer-button-alt"]:active {
-  background-color: rgb(var(--oui-color-primary-darken)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
+button.oui-button span:contains("Transfer") {
+  /* requires JS-injected CSS in some frameworks — not pure CSS */
 }

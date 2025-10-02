@@ -278,3 +278,26 @@ button.oui-button.oui-bg-base-4:has(span span:contains("Transfer")):active {
   background-color: rgb(var(--oui-color-danger-darken)) !important;   /* darker red */
   color: rgb(var(--oui-color-danger-contrast)) !important;
 }
+
+/* Base state: gray background → styled red like Close/Sell */
+button[id*="cancel-button"],
+[data-testid*="cancel"] {
+  background-color: rgb(var(--oui-color-danger)) !important;          /* red */
+  color: rgb(var(--oui-color-danger-contrast)) !important;
+  border-color: rgb(var(--oui-color-danger-darken)) !important;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Hover: darker red */
+button[id*="cancel-button"]:hover,
+[data-testid*="cancel"]:hover {
+  background-color: rgb(var(--oui-color-danger-darken)) !important;
+  color: rgb(var(--oui-color-danger-contrast)) !important;
+}
+
+/* Active (pressed): same darker red, maybe deeper if needed */
+button[id*="cancel-button"]:active,
+[data-testid*="cancel"]:active {
+  background-color: rgb(var(--oui-color-danger-darken)) !important;
+  color: rgb(var(--oui-color-danger-contrast)) !important;
+}

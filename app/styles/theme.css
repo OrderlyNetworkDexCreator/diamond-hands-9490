@@ -182,6 +182,21 @@ button[aria-haspopup="dialog"][type="button"]:active {
   color: rgb(var(--oui-color-primary-contrast)) !important;
 }
 
-button.oui-button span:contains("Transfer") {
-  /* requires JS-injected CSS in some frameworks — not pure CSS */
+/* Default state = neutral gray */
+button.oui-button.oui-bg-base-4 {
+  background-color: rgb(var(--oui-color-base-4)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Hover = green (like Buy) */
+button.oui-button.oui-bg-base-4:hover {
+  background-color: rgb(var(--oui-color-primary)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
+}
+
+/* Active/Pressed = darker green */
+button.oui-button.oui-bg-base-4:active {
+  background-color: rgb(var(--oui-color-primary-darken)) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
 }

@@ -1,6 +1,6 @@
 window.__RUNTIME_CONFIG__ = {
   "VITE_ORDERLY_BROKER_ID": "diamondhands",
-  "VITE_ORDERLY_BROKER_NAME": "Diamond Hands",
+  "VITE_ORDERLY_BROKER_NAME": "DiamondX",
   "VITE_DISABLE_MAINNET": "false",
   "VITE_DISABLE_TESTNET": "false",
   "VITE_ORDERLY_MAINNET_CHAINS": "42161,10,8453,1,56,900900900",
@@ -13,7 +13,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_DISABLE_EVM_WALLETS": "false",
   "VITE_DISABLE_SOLANA_WALLETS": "false",
   "VITE_WALLETCONNECT_PROJECT_ID": "864c1add5dd75ea4b1af6a695979ea13",
-  "VITE_APP_NAME": "Diamond Hands",
+  "VITE_APP_NAME": "DiamondX",
   "VITE_APP_DESCRIPTION": "Decentralized Perpetual Trading Platform in the Diamond Hands Ecosystem",
   "VITE_HAS_PRIMARY_LOGO": "true",
   "VITE_HAS_SECONDARY_LOGO": "true",

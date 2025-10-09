@@ -21,7 +21,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_CUSTOM_MENUS": "Purchase $VAL, https://raydium.io/swap/?inputMint=sol&outputMint=DtwN3PHiKEpK1MSekViVC8QifdRJCkML6HG16sXHpump; Play Diamond Hands, https://app.valmeme.com/",
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "https://t.me/StoreofVal",
-  "VITE_DISCORD_URL": "",
+  "VITE_DISCORD_URL": "https://discord.gg/DbnWbYKgVa",
   "VITE_TWITTER_URL": "https://x.com/DiamondXPerps",
   "VITE_SEO_SITE_NAME": "DiamondX Perps",
   "VITE_SEO_SITE_DESCRIPTION": "Decentralized Perpetual Trading Platform of the Store of Value Ecosystem",

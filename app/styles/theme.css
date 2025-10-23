@@ -107,6 +107,17 @@
 .oui-button[aria-haspopup="dialog"]:active {
   background-color: rgb(var(--oui-color-danger-darken)) !important;    /* darker red */
 }
+/* Make Cancel buttons red as well */
+#oui-positions-confirm-footer-cancel-button,
+.oui-button#oui-positions-confirm-footer-cancel-button {
+  background-color: rgb(var(--oui-color-danger)) !important;
+  color: rgb(var(--oui-color-danger-contrast)) !important;
+  border-color: rgb(var(--oui-color-danger)) !important;
+}
+#oui-positions-confirm-footer-cancel-button:hover,
+#oui-positions-confirm-footer-cancel-button:active {
+  background-color: rgb(var(--oui-color-danger-darken)) !important;
+}
 
 html, body {
   font-family: 'Manrope', sans-serif !important; /* or 'Roboto', sans-serif */

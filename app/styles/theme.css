@@ -1,79 +1,81 @@
 :root {
-  --oui-font-family: 'Roboto', sans-serif;
+  --oui-font-family: 'Manrope', sans-serif;
   --oui-font-size-base: 16px;
 
-  /* BRAND COLORS (VAL: green + gold on dark) */
-  --oui-color-primary: 42 183 75;         /* VAL green (actions) */
-  --oui-color-primary-light: 250 171 0;   /* Gold accent */
-  --oui-color-primary-darken: 28 140 55;  /* Deeper VAL green for hover/active */
-  --oui-color-primary-contrast: 0 0 0;    /* Black text on bright green/gold */
+  /* colors */
+  --oui-color-primary: 176 132 233;
+  --oui-color-primary-light: 213 190 244;
+  --oui-color-primary-darken: 137 76 209;
+  --oui-color-primary-contrast: 255 255 255;
 
-  /* Links use gold to match site CTAs/accents */
-  --oui-color-link: 250 171 0;            /* Gold links */
-  --oui-color-link-light: 255 209 70;     /* Lighter gold on hover */
+  --oui-color-link: 189 107 237;
+  --oui-color-link-light: 217 152 250;
 
-  /* Supporting palette */
-  --oui-color-secondary: 128 63 107;      /* Deep purple (space/cosmic vibe) */
-  --oui-color-tertiary: 4 149 246;        /* Utility blue if needed */
-  --oui-color-quaternary: 237 167 0;      /* Alt gold */
+  --oui-color-secondary: 255 255 255;
+  --oui-color-tertiary: 218 218 218;
+  --oui-color-quaternary: 218 218 218;
 
-  /* Status */
-  --oui-color-danger: 245 97 139;         /* Red (sell/errors) */
-  --oui-color-danger-light: 250 120 160;
-  --oui-color-danger-darken: 230 80 120;
-  --oui-color-danger-contrast: 0 0 0;
+  --oui-color-danger: 245 97 139;
+  --oui-color-danger-light: 250 167 188;
+  --oui-color-danger-darken: 237 72 122;
+  --oui-color-danger-contrast: 255 255 255;
 
-  --oui-color-success: 41 233 169;        /* Bright success green */
-  --oui-color-success-light: 100 250 200;
-  --oui-color-success-darken: 30 200 150;
-  --oui-color-success-contrast: 0 0 0;
+  --oui-color-success: 41 233 169;
+  --oui-color-success-light: 101 240 194;
+  --oui-color-success-darken: 0 161 120;
+  --oui-color-success-contrast: 255 255 255;
 
-  --oui-color-warning: 255 209 70;        /* Warm gold warning */
-  --oui-color-warning-light: 255 230 120;
-  --oui-color-warning-darken: 230 180 50;
-  --oui-color-warning-contrast: 0 0 0;
+  --oui-color-warning: 255 209 70;
+  --oui-color-warning-light: 255 229 133;
+  --oui-color-warning-darken: 255 152 0;
+  --oui-color-warning-contrast: 255 255 255;
 
-  /* Surfaces (softer dark theme) */
-  --oui-color-base-1: 24 26 44;   /* page bg — deep navy */
-  --oui-color-base-2: 28 30 50;
-  --oui-color-base-3: 32 34 54;
-  --oui-color-base-4: 36 38 58;
-  --oui-color-base-5: 40 42 64;   /* card bg */
-  --oui-color-base-6: 48 50 72;   /* input bg — softer than 10 5 0 */
-  --oui-color-base-7: 56 58 84;   /* hover/active states */
-  --oui-color-base-foreground: 255 255 255; /* Text on dark */
-  --oui-color-line: 53 196 87;              /* Green divider/border */
+  --oui-color-fill: 36 32 47;
+  --oui-color-fill-active: 40 46 58;
 
-  /* Trading */
+  --oui-color-base-1: 93 83 123;
+  --oui-color-base-2: 81 72 107;
+  --oui-color-base-3: 68 61 69;
+  --oui-color-base-4: 57 52 74;
+  --oui-color-base-5: 51 46 66;
+  --oui-color-base-6: 43 38 56;
+  --oui-color-base-7: 36 32 47;
+  --oui-color-base-8: 29 26 38;
+  --oui-color-base-9: 22 20 28;
+  --oui-color-base-10: 14 13 18;
+
+  --oui-color-base-foreground: 255 255 255;
+  --oui-color-line: 255 255 255;
+
   --oui-color-trading-loss: 245 97 139;
   --oui-color-trading-loss-contrast: 255 255 255;
   --oui-color-trading-profit: 41 233 169;
   --oui-color-trading-profit-contrast: 255 255 255;
 
-  /* Gradients (brand: gold → green) */
-  --oui-gradient-primary-start: 255 205 150;
-  --oui-gradient-primary-end: 42 183 75;
+  /* gradients */
+  --oui-gradient-primary-start: 40 0 97;
+  --oui-gradient-primary-end: 189 107 237;
 
-  --oui-gradient-secondary-start: 250 171 0;  /* gold */
-  --oui-gradient-secondary-end: 42 183 75;    /* green */
+  --oui-gradient-secondary-start: 81 42 121;
+  --oui-gradient-secondary-end: 176 132 233;
 
-  --oui-gradient-success-start: 30 150 120;
-  --oui-gradient-success-end: 41 233 169;
+  --oui-gradient-success-start: 1 83 68;
+  --oui-gradient-success-end: 41 223 169;
 
-  --oui-gradient-danger-start: 200 50 100;
+  --oui-gradient-danger-start: 153 24 76;
   --oui-gradient-danger-end: 245 97 139;
 
-  --oui-gradient-brand-start: 250 171 0;      /* gold */
-  --oui-gradient-brand-end: 42 183 75;        /* green */
+  --oui-gradient-brand-start: 231 219 249;
+  --oui-gradient-brand-end: 159 107 225;
   --oui-gradient-brand-stop-start: 6.62%;
   --oui-gradient-brand-stop-end: 86.5%;
   --oui-gradient-brand-angle: 17.44deg;
 
-  --oui-gradient-warning-start: 220 150 50;
+  --oui-gradient-warning-start: 152 58 8;
   --oui-gradient-warning-end: 255 209 70;
 
-  --oui-gradient-neutral-start: 20 20 20;
-  --oui-gradient-neutral-end: 40 40 40;
+  --oui-gradient-neutral-start: 27 29 24;
+  --oui-gradient-neutral-end: 38 41 46;
 
   /* rounded */
   --oui-rounded-sm: 2px;
@@ -92,212 +94,7 @@
   --oui-spacing-xl: 33.75rem;
 }
 
-/* COMPONENT OVERRIDES (solid brand colors on buttons) */
-[data-testid="oui-testid-orderEntry-side-buy-button"] {
-  background-color: rgb(var(--oui-color-primary)) !important;            /* green */
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-}
-[data-testid="oui-testid-orderEntry-side-buy-button"]:hover,
-[data-testid="oui-testid-orderEntry-side-buy-button"]:active {
-  background-color: rgb(var(--oui-color-primary-darken)) !important;     /* deeper green */
-}
-
-[data-testid="oui-testid-orderEntry-side-sell-button"] {
-  background-color: rgb(var(--oui-color-danger)) !important;             /* red */
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-[data-testid="oui-testid-orderEntry-side-sell-button"]:hover,
-[data-testid="oui-testid-orderEntry-side-sell-button"]:active {
-  background-color: rgb(var(--oui-color-danger-darken)) !important;
-}
-
-/* Base typography */
 html, body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Manrope', sans-serif !important;
   font-size: 16px !important;
-}
-
-span.oui-bg-clip-text {
-  background: linear-gradient(
-    var(--oui-gradient-brand-angle),
-    rgb(var(--oui-gradient-brand-start)) 0%,
-    rgb(var(--oui-gradient-brand-end)) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-button[aria-haspopup="dialog"][type="button"] {
-  background-color: rgb(var(--oui-color-danger)) !important;          /* red */
-  color: rgb(var(--oui-color-danger-contrast)) !important;           /* text (black/white depending on your token) */
-  border-color: rgb(var(--oui-color-danger-darken)) !important;      /* border slightly darker red */
-}
-
-button[aria-haspopup="dialog"][type="button"]:hover,
-button[aria-haspopup="dialog"][type="button"]:active {
-  background-color: rgb(var(--oui-color-danger-darken)) !important;  /* darker red on hover/active */
-}
-[data-testid="oui-testid-portfolio-assets-withdraw-btn"] {
-  background-color: rgb(var(--oui-color-base-4));
-  color: rgb(var(--oui-color-primary-contrast));
-  transition: background-color 0.25s ease;
-}
-
-[data-testid="oui-testid-portfolio-assets-withdraw-btn"]:hover {
-  background-color: rgb(var(--oui-color-danger)); /* red on hover */
-  color: rgb(var(--oui-color-danger-contrast));
-}
-
-[data-testid="oui-testid-portfolio-assets-withdraw-btn"]:active {
-  background-color: rgb(var(--oui-color-danger-darken)); /* darker red on click */
-}
-/* Default state stays neutral */
-[data-testid="oui-testid-assetView-withdraw-button"] {
-  background-color: rgb(var(--oui-color-base-4)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-/* Hover turns red */
-[data-testid="oui-testid-assetView-withdraw-button"]:hover {
-  background-color: rgb(var(--oui-color-danger)) !important;
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-
-/* Active (pressed) state = darker red */
-[data-testid="oui-testid-assetView-withdraw-button"]:active {
-  background-color: rgb(var(--oui-color-danger-darken)) !important;
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-
-/* Default state = neutral gray */
-[data-testid="oui-testid-assetView-transfer-button"] {
-  background-color: rgb(var(--oui-color-base-4)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-/* Hover = brand green (like Buy) */
-[data-testid="oui-testid-assetView-transfer-button"]:hover {
-  background-color: rgb(var(--oui-color-primary)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-}
-
-/* ---------------- WITHDRAW (hover red) ---------------- */
-[data-testid="oui-testid-assetView-withdraw-button"],
-button.oui-button.oui-bg-base-4 span:has(+ span:contains("Withdraw")) {
-  background-color: rgb(var(--oui-color-base-4)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-[data-testid="oui-testid-assetView-withdraw-button"]:hover,
-button.oui-button.oui-bg-base-4:has(span span:contains("Withdraw")):hover {
-  background-color: rgb(var(--oui-color-danger)) !important;          /* red */
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-
-[data-testid="oui-testid-assetView-withdraw-button"]:active,
-button.oui-button.oui-bg-base-4:has(span span:contains("Withdraw")):active {
-  background-color: rgb(var(--oui-color-danger-darken)) !important;   /* darker red */
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-
-
-/* ---------------- TRANSFER (hover green) ---------------- */
-[data-testid="oui-testid-assetView-transfer-button"],
-button.oui-button.oui-bg-base-4 span:has(+ span:contains("Transfer")) {
-  background-color: rgb(var(--oui-color-base-4)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-[data-testid="oui-testid-assetView-transfer-button"]:hover,
-button.oui-button.oui-bg-base-4:has(span span:contains("Transfer")):hover {
-  background-color: rgb(var(--oui-color-primary)) !important;         /* green */
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-}
-
-[data-testid="oui-testid-assetView-transfer-button"]:active,
-button.oui-button.oui-bg-base-4:has(span span:contains("Transfer")):active {
-  background-color: rgb(var(--oui-color-primary-darken)) !important;  /* darker green */
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-}
-
-/* =====================================
-   WITHDRAW (hover red)
-   ===================================== */
-[data-testid="oui-testid-assetView-withdraw-button"] {
-  background-color: rgb(var(--oui-color-base-4)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-[data-testid="oui-testid-assetView-withdraw-button"]:hover {
-  background-color: rgb(var(--oui-color-danger)) !important;          /* red */
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-[data-testid="oui-testid-assetView-withdraw-button"]:active {
-  background-color: rgb(var(--oui-color-danger-darken)) !important;   /* darker red */
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-
-
-/* =====================================
-   TRANSFER (hover green)
-   ===================================== */
-[data-testid="oui-testid-assetView-transfer-button"],
-[data-testid="oui-testid-assetView-transfer-button-alt"] {
-  background-color: rgb(var(--oui-color-base-4)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-[data-testid="oui-testid-assetView-transfer-button"]:hover,
-[data-testid="oui-testid-assetView-transfer-button-alt"]:hover {
-  background-color: rgb(var(--oui-color-primary)) !important;         /* green */
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-}
-[data-testid="oui-testid-assetView-transfer-button"]:active,
-[data-testid="oui-testid-assetView-transfer-button-alt"]:active {
-  background-color: rgb(var(--oui-color-primary-darken)) !important;  /* darker green */
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-}
-
-
-/* =====================================
-   CLOSE (hover red)
-   ===================================== */
-[data-testid="oui-testid-assetView-close-button"] {
-  background-color: rgb(var(--oui-color-base-4)) !important;
-  color: rgb(var(--oui-color-primary-contrast)) !important;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-[data-testid="oui-testid-assetView-close-button"]:hover {
-  background-color: rgb(var(--oui-color-danger)) !important;          /* red */
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-[data-testid="oui-testid-assetView-close-button"]:active {
-  background-color: rgb(var(--oui-color-danger-darken)) !important;   /* darker red */
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-
-/* Base state: gray background → styled red like Close/Sell */
-button[id*="cancel-button"],
-[data-testid*="cancel"] {
-  background-color: rgb(var(--oui-color-danger)) !important;          /* red */
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-  border-color: rgb(var(--oui-color-danger-darken)) !important;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-/* Hover: darker red */
-button[id*="cancel-button"]:hover,
-[data-testid*="cancel"]:hover {
-  background-color: rgb(var(--oui-color-danger-darken)) !important;
-  color: rgb(var(--oui-color-danger-contrast)) !important;
-}
-
-/* Active (pressed): same darker red, maybe deeper if needed */
-button[id*="cancel-button"]:active,
-[data-testid*="cancel"]:active {
-  background-color: rgb(var(--oui-color-danger-darken)) !important;
-  color: rgb(var(--oui-color-danger-contrast)) !important;
 }

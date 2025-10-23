@@ -97,6 +97,16 @@
   --oui-spacing-lg: 30rem;
   --oui-spacing-xl: 33.75rem;
 }
+/* Make dialog action buttons red (Close) */
+.oui-button[aria-haspopup="dialog"] {
+  background-color: rgb(var(--oui-color-danger)) !important;           /* red */
+  color: rgb(var(--oui-color-danger-contrast)) !important;             /* text */
+  border-color: rgb(var(--oui-color-danger)) !important;
+}
+.oui-button[aria-haspopup="dialog"]:hover,
+.oui-button[aria-haspopup="dialog"]:active {
+  background-color: rgb(var(--oui-color-danger-darken)) !important;    /* darker red */
+}
 
 html, body {
   font-family: 'Manrope', sans-serif !important; /* or 'Roboto', sans-serif */

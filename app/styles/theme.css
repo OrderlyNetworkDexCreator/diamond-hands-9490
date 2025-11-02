@@ -126,3 +126,24 @@ button.oui-button[aria-haspopup="dialog"][aria-controls^="radix-"],
   color: rgb(var(--oui-color-danger-contrast)) !important;
   border-color: rgb(var(--oui-color-danger-darken)) !important;
 }
+
+/* === VAL Brand: unify Cancel button styling === */
+button[data-testid="oui-testid-leverage-cancel-btn"] {
+  background: linear-gradient(
+    180deg,
+    rgb(153 24 76),
+    rgb(245 97 139)
+  ) !important;
+  color: rgb(255 255 255) !important;
+  border-color: rgb(237 72 122) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+/* Optional: hover & active to match feel of the rest */
+button[data-testid="oui-testid-leverage-cancel-btn"]:hover {
+  filter: brightness(1.08) !important;
+}
+
+button[data-testid="oui-testid-leverage-cancel-btn"]:active {
+  filter: brightness(0.9) !important;
+}

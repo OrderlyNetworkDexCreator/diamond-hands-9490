@@ -1,6 +1,7 @@
 window.__RUNTIME_CONFIG__ = {
   "VITE_ORDERLY_BROKER_ID": "diamondhands",
   "VITE_ORDERLY_BROKER_NAME": "DiamondX",
+  "VITE_BROKER_EOA_ADDRESS": "0xd4e9409032e93ef34c2c6b72dc07af6a38f591a1",
   "VITE_DISABLE_MAINNET": "false",
   "VITE_DISABLE_TESTNET": "false",
   "VITE_ORDERLY_MAINNET_CHAINS": "42161,10,8453,1,56,900900900,1329,43114,146,5000",
@@ -19,13 +20,14 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_HAS_SECONDARY_LOGO": "true",
   "VITE_ENABLED_MENUS": "Trading,Swap,Portfolio,Markets,Rewards,Vaults,Leaderboard",
   "VITE_CUSTOM_MENUS": "Purchase $VAL, https://raydium.io/swap/?inputMint=sol&outputMint=DtwN3PHiKEpK1MSekViVC8QifdRJCkML6HG16sXHpump; Play Diamond Hands, https://app.valmeme.com/",
+  "VITE_ENABLE_SERVICE_DISCLAIMER_DIALOG": "false",
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "https://t.me/StoreofVal",
   "VITE_DISCORD_URL": "https://discord.gg/RwGEqFPxwF",
   "VITE_TWITTER_URL": "https://x.com/DiamondXPerps",
   "VITE_SEO_SITE_NAME": "DiamondX Perps",
   "VITE_SEO_SITE_DESCRIPTION": "Decentralized Perpetual Trading Platform of the Store of Value Ecosystem",
-  "VITE_SEO_SITE_URL": "https://perps.valmeme.com",
+  "VITE_SEO_SITE_URL": "https://trade.diamondx.exchange",
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "@DiamondXPerps",
@@ -34,5 +36,6 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_AVAILABLE_LANGUAGES": "en,zh,ja,es,ko,vi,de,fr,ru,id,tr,it,pt,uk,pl,nl",
   "VITE_USE_CUSTOM_PNL_POSTERS": "true",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "4",
-  "VITE_TRADING_VIEW_COLOR_CONFIG": ""
+  "VITE_TRADING_VIEW_COLOR_CONFIG": "",
+  "VITE_ANALYTICS_SCRIPT": ""
 };

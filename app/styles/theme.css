@@ -2,47 +2,36 @@
   --oui-font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   --oui-font-size-base: 16px;
 
-  /* ===== DiamondX Unified Brand ===== */
-  /* Primary Brand Colors */
   --dx-cyan:    #1FDDFE;
   --dx-emerald: #10B981;
   --dx-gold:    #F4B73E;
 
-  /* Backgrounds (Dark Mode) */
-  --bg1: #0b2f53;  /* deep teal */
-  --bg2: #0a2240;  /* navy */
-  --bg3: #0b0b10;  /* charcoal */
+  --bg1: #0b2f53;
+  --bg2: #0a2240;
+  --bg3: #0b0b10;
   
-  /* Text & Lines (Dark Mode) */
   --text:     #ffffff;
   --text-dim: rgba(255,255,255,.65);
   --line:     rgba(255,255,255,.12);
 
-  /* Glass Panels (Dark Mode) */
   --panel-top: rgba(255,255,255,.06);
   --panel-bot: rgba(255,255,255,.03);
 
-  /* ===== Map to OUI tokens (for Orderly UI compatibility) ===== */
-  /* Primary = Emerald (main brand color) */
-  --oui-color-primary: 16 185 129;  /* #10B981 */
-  --oui-color-primary-light: 88 229 185;  /* #58e5b9 - lighter emerald */
-  --oui-color-primary-darken: 5 150 105;  /* #059669 - darker emerald */
-  --oui-color-primary-contrast: 0 0 0;  /* Black text on emerald */
+  --oui-color-primary: 16 185 129;
+  --oui-color-primary-light: 88 229 185;
+  --oui-color-primary-darken: 5 150 105;
+  --oui-color-primary-contrast: 0 0 0;
 
-  /* Links = Gold (accent) */
-  --oui-color-link: 244 183 62;  /* #F4B73E */
-  --oui-color-link-light: 251 191 36;  /* #fbbf24 - lighter gold */
+  --oui-color-link: 244 183 62;
+  --oui-color-link-light: 251 191 36;
 
-  /* Secondary/Tertiary = Text colors */
   --oui-color-secondary: var(--text);
   --oui-color-tertiary: 200 200 200;
   --oui-color-quaternary: 160 160 160;
 
-  /* Fill colors = Backgrounds */
   --oui-color-fill: var(--bg1);
-  --oui-color-fill-active: 18 20 32;  /* Slightly lighter than bg1 */
+  --oui-color-fill-active: 18 20 32;
 
-  /* Base colors (for UI elements) */
   --oui-color-base-1: 210 210 220;
   --oui-color-base-2: 180 184 196;
   --oui-color-base-3: 70 74 92;
@@ -57,25 +46,20 @@
   --oui-color-base-foreground: var(--text);
   --oui-color-line: var(--line);
 
-  /* Trading (PnL) - Keep existing but use brand colors */
-  --oui-color-trading-loss: 245 97 139;  /* Keep red for losses */
-  --oui-color-trading-profit: 16 185 129;  /* Use emerald for profits */
+  --oui-color-trading-loss: 245 97 139;
+  --oui-color-trading-profit: 16 185 129;
 
-  /* ===== Brand Gradients ===== */
-  /* Primary Gradient: Gold → Emerald (signature DiamondX gradient) */
-  --oui-gradient-brand-start: 244 183 62;  /* #F4B73E */
-  --oui-gradient-brand-end: 16 185 129;  /* #10B981 */
+  --oui-gradient-brand-start: 244 183 62;
+  --oui-gradient-brand-end: 16 185 129;
   --oui-gradient-brand-stop-start: 0%;
   --oui-gradient-brand-stop-end: 100%;
-  --oui-gradient-brand-angle: 135deg;  /* Diagonal gradient */
+  --oui-gradient-brand-angle: 135deg;
 
-  /* Primary/Secondary Variants */
-  --oui-gradient-primary-start: 244 183 62;  /* Gold */
-  --oui-gradient-primary-end: 16 185 129;  /* Emerald */
-  --oui-gradient-secondary-start: 5 150 105;  /* Dark emerald */
-  --oui-gradient-secondary-end: 16 185 129;  /* Emerald */
+  --oui-gradient-primary-start: 244 183 62;
+  --oui-gradient-primary-end: 16 185 129;
+  --oui-gradient-secondary-start: 5 150 105;
+  --oui-gradient-secondary-end: 16 185 129;
 
-  /* Danger (red) - Keep for cancel/close buttons */
   --oui-color-danger: 245 97 139;
   --oui-color-danger-light: 250 167 188;
   --oui-color-danger-darken: 237 72 122;
@@ -83,17 +67,14 @@
   --oui-gradient-danger-start: 153 24 76;
   --oui-gradient-danger-end: 245 97 139;
 
-  /* Warning = Gold */
-  --oui-color-warning: 244 183 62;  /* #F4B73E */
-  --oui-color-warning-light: 251 191 36;  /* #fbbf24 */
-  --oui-color-warning-darken: 217 119 6;  /* #d97706 */
-  --oui-color-warning-contrast: 0 0 0;  /* Black text on gold */
+  --oui-color-warning: 244 183 62;
+  --oui-color-warning-light: 251 191 36;
+  --oui-color-warning-darken: 217 119 6;
+  --oui-color-warning-contrast: 0 0 0;
 
-  /* Neutrals = Background gradients */
   --oui-gradient-neutral-start: var(--bg1);
   --oui-gradient-neutral-end: var(--bg2);
 
-  /* Rounded corners */
   --oui-rounded: 4px;
   --oui-rounded-md: 6px;
   --oui-rounded-lg: 8px;
@@ -101,17 +82,104 @@
   --oui-rounded-full: 9999px;
 }
 
-/* Light Mode Support */
-html.light {
-  --text:     #000000;  /* Pure black for maximum contrast */
-  --text-dim: rgba(0,0,0,.8);  /* Increased for better readability */
-  --line:     rgba(0,0,0,.2);  /* Stronger borders */
+html, body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
+  background: radial-gradient(
+    ellipse at 50% -10%,
+    var(--bg1),
+    var(--bg2) 35%,
+    var(--bg3) 100%
+  ) fixed !important;
+  color: rgb(var(--text)) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  /* Solid white panels for maximum text contrast */
-  --panel-top: #ffffff;
-  --panel-bot: #ffffff;
+.oui-button.oui-bg-primary,
+.oui-button[data-variant="primary"] {
+  background: linear-gradient(
+    135deg,
+    rgb(var(--oui-gradient-primary-start)),
+    rgb(var(--oui-gradient-primary-end))
+  ) !important;
+  color: rgb(var(--oui-color-primary-contrast)) !important;
+  border-color: rgba(0,0,0,.2) !important;
+  transition: all 0.2s ease-in-out !important;
+}
 
-  /* Update OUI base colors for light mode */
-  --oui-color-base-foreground: var(--text);
-  --oui-color-line: var(--line);
+.oui-button.oui-bg-primary:hover,
+.oui-button[data-variant="primary"]:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.oui-button.oui-bg-primary:active,
+.oui-button[data-variant="primary"]:active {
+  filter: brightness(0.95);
+}
+
+a {
+  color: rgb(var(--oui-color-link)) !important;
+  transition: color 0.2s ease-in-out !important;
+}
+
+a:hover {
+  color: rgb(var(--oui-color-primary)) !important;
+}
+
+#oui-positions-confirm-footer-cancel-button,
+button.oui-button[aria-haspopup="dialog"][aria-controls^="radix-"],
+.oui-button--danger,
+.dx-danger {
+  background: linear-gradient(
+    180deg,
+    rgb(var(--oui-gradient-danger-start)),
+    rgb(var(--oui-gradient-danger-end))
+  ) !important;
+  color: rgb(var(--oui-color-danger-contrast)) !important;
+  border-color: rgb(var(--oui-color-danger-darken)) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+#oui-positions-confirm-footer-cancel-button:hover,
+button.oui-button[aria-haspopup="dialog"][aria-controls^="radix-"]:hover,
+.oui-button--danger:hover,
+.dx-danger:hover {
+  filter: brightness(1.08) !important;
+}
+
+#oui-positions-confirm-footer-cancel-button:active,
+button.oui-button[aria-haspopup="dialog"][aria-controls^="radix-"]:active,
+.oui-button--danger:active,
+.dx-danger:active {
+  filter: brightness(0.9) !important;
+}
+
+button[data-testid="oui-testid-leverage-cancel-btn"] {
+  background: linear-gradient(
+    180deg,
+    rgb(153 24 76),
+    rgb(245 97 139)
+  ) !important;
+  color: rgb(255 255 255) !important;
+  border-color: rgb(237 72 122) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+button[data-testid="oui-testid-leverage-cancel-btn"]:hover {
+  filter: brightness(1.08) !important;
+}
+
+button[data-testid="oui-testid-leverage-cancel-btn"]:active {
+  filter: brightness(0.9) !important;
+}
+
+.oui-color-profit,
+[data-profit="true"] {
+  color: rgb(var(--oui-color-trading-profit)) !important;
+}
+
+.oui-color-loss,
+[data-loss="true"] {
+  color: rgb(var(--oui-color-trading-loss)) !important;
 }

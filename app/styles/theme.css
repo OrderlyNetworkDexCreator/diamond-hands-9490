@@ -103,14 +103,9 @@ body {
     #0a2240 35%,
     #0b0b10 100%
   ) fixed !important;
-  color: rgb(var(--text)) !important;
+  color: rgb(var(--oui-color-base-foreground));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-[class*="oui-"]:not([class*="button"]):not([class*="link"]),
-[class*="orderly-"]:not([class*="button"]):not([class*="link"]) {
-  color: rgb(var(--text)) !important;
 }
 
 .oui-button.oui-bg-primary,
@@ -190,14 +185,4 @@ button[data-testid="oui-testid-leverage-cancel-btn"]:hover {
 
 button[data-testid="oui-testid-leverage-cancel-btn"]:active {
   filter: brightness(0.9) !important;
-}
-
-.oui-color-profit,
-[data-profit="true"] {
-  color: rgb(var(--oui-color-trading-profit)) !important;
-}
-
-.oui-color-loss,
-[data-loss="true"] {
-  color: rgb(var(--oui-color-trading-loss)) !important;
 }

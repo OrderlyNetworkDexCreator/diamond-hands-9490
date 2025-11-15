@@ -10,12 +10,16 @@
   --bg2: #0a2240;
   --bg3: #0b0b10;
   
-  --text:     #ffffff;
-  --text-dim: rgba(255,255,255,.65);
-  --line:     rgba(255,255,255,.12);
+  --text:     255 255 255;
+  --text-dim: 255 255 255;
+  --text-dim-opacity: 0.65;
+  --line:     255 255 255;
+  --line-opacity: 0.12;
 
-  --panel-top: rgba(255,255,255,.06);
-  --panel-bot: rgba(255,255,255,.03);
+  --panel-top: 255 255 255;
+  --panel-top-opacity: 0.06;
+  --panel-bot: 255 255 255;
+  --panel-bot-opacity: 0.03;
 
   --oui-color-primary: 16 185 129;
   --oui-color-primary-light: 88 229 185;
@@ -25,11 +29,11 @@
   --oui-color-link: 244 183 62;
   --oui-color-link-light: 251 191 36;
 
-  --oui-color-secondary: var(--text);
+  --oui-color-secondary: 255 255 255;
   --oui-color-tertiary: 200 200 200;
   --oui-color-quaternary: 160 160 160;
 
-  --oui-color-fill: var(--bg1);
+  --oui-color-fill: 11 47 83;
   --oui-color-fill-active: 18 20 32;
 
   --oui-color-base-1: 210 210 220;
@@ -38,13 +42,13 @@
   --oui-color-base-4: 58 62 82;
   --oui-color-base-5: 52 56 74;
   --oui-color-base-6: 44 48 66;
-  --oui-color-base-7: var(--bg1);
-  --oui-color-base-8: var(--bg2);
+  --oui-color-base-7: 11 47 83;
+  --oui-color-base-8: 10 34 64;
   --oui-color-base-9: 18 20 32;
-  --oui-color-base-10: var(--bg3);
+  --oui-color-base-10: 11 11 16;
 
-  --oui-color-base-foreground: var(--text);
-  --oui-color-line: var(--line);
+  --oui-color-base-foreground: 255 255 255;
+  --oui-color-line: 255 255 255;
 
   --oui-color-trading-loss: 245 97 139;
   --oui-color-trading-profit: 16 185 129;
@@ -72,8 +76,8 @@
   --oui-color-warning-darken: 217 119 6;
   --oui-color-warning-contrast: 0 0 0;
 
-  --oui-gradient-neutral-start: var(--bg1);
-  --oui-gradient-neutral-end: var(--bg2);
+  --oui-gradient-neutral-start: 11 47 83;
+  --oui-gradient-neutral-end: 10 34 64;
 
   --oui-rounded: 4px;
   --oui-rounded-md: 6px;
@@ -82,17 +86,31 @@
   --oui-rounded-full: 9999px;
 }
 
-html, body {
+html {
+  background: radial-gradient(
+    ellipse at 50% -10%,
+    #0b2f53,
+    #0a2240 35%,
+    #0b0b10 100%
+  ) fixed !important;
+}
+
+body {
   font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif !important;
   background: radial-gradient(
     ellipse at 50% -10%,
-    var(--bg1),
-    var(--bg2) 35%,
-    var(--bg3) 100%
+    #0b2f53,
+    #0a2240 35%,
+    #0b0b10 100%
   ) fixed !important;
   color: rgb(var(--text)) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+[class*="oui-"]:not([class*="button"]):not([class*="link"]),
+[class*="orderly-"]:not([class*="button"]):not([class*="link"]) {
+  color: rgb(var(--text)) !important;
 }
 
 .oui-button.oui-bg-primary,

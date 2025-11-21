@@ -19,7 +19,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_HAS_PRIMARY_LOGO": "true",
   "VITE_HAS_SECONDARY_LOGO": "true",
   "VITE_ENABLED_MENUS": "Trading,Swap,Portfolio,Markets,Rewards,Vaults,Leaderboard",
-  "VITE_CUSTOM_MENUS": "Purchase $VAL, https://raydium.io/swap/?inputMint=sol&outputMint=DtwN3PHiKEpK1MSekViVC8QifdRJCkML6HG16sXHpump; Play Diamond Hands, https://app.valmeme.com/",
+  "VITE_CUSTOM_MENUS": "Crypto Stream, https://stream.diamondx.exchange; Back-to-home, https://diamondx.exchange",
   "VITE_ENABLE_SERVICE_DISCLAIMER_DIALOG": "false",
   "VITE_ENABLE_CAMPAIGNS": "false",
   "VITE_TELEGRAM_URL": "https://t.me/StoreofVal",

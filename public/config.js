@@ -18,7 +18,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_APP_DESCRIPTION": "Decentralized Perpetual Trading Platform of the Store of Value Ecosystem",
   "VITE_HAS_PRIMARY_LOGO": "true",
   "VITE_HAS_SECONDARY_LOGO": "true",
-  "VITE_ENABLED_MENUS": "Trading,Swap,Portfolio,Markets,Rewards,Vaults,Leaderboard",
+  "VITE_ENABLED_MENUS": "Trading,Swap,Portfolio,Markets,Rewards,Vaults,Leaderboard,Campaigns",
   "VITE_CUSTOM_MENUS": "DX Streaming, https://stream.diamondx.exchange; DXfi-Dashboard, https://dxfi.diamondx.exchange/dashboard.html",
   "VITE_ENABLE_SERVICE_DISCLAIMER_DIALOG": "false",
   "VITE_ENABLE_CAMPAIGNS": "false",

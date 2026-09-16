@@ -1,6 +1,6 @@
 window.__RUNTIME_CONFIG__ = {
   "VITE_DEPLOYMENT_ENV": "mainnet",
-  "VITE_ORDERLY_BROKER_ID": "demo",
+  "VITE_ORDERLY_BROKER_ID": "diamondhands",
   "VITE_ORDERLY_BROKER_NAME": "DiamondX",
   "VITE_BROKER_EOA_ADDRESS": "0xd4e9409032e93ef34c2c6b72dc07af6a38f591a1",
   "VITE_DISABLE_MAINNET": "false",
